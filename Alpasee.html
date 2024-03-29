@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpase</title>
+    <style>
+        body {
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            color: rgb(18, 16, 19);
+            font-family: Arial, sans-serif;
+            margin: 0%;
+            padding: 0;
+            margin-top: 140px;
+            text-align: center;
+
+        }
+        /* Additional CSS styles can be added here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alpasee</h1>
+        <nav>
+            <ul>
+                <li><a href="#tracking">Track Packages</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#customer-care">Customer Care</a></li>
+                <li><div id="google_translate_element"></div></li>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tracking">
+        <h2>Track Your Package</h2>
+        <form id="track-form">
+            <label for="tracking-code">Enter Tracking Code:</label>
+            <input type="text" id="tracking-code" name="tracking-code" placeholder="Enter your tracking code" required>
+            <button type="submit" onclick="trackPackage()">Track</button>
+        </form>
+        <div id="map"></div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-carousel">
+            <!-- Carousel for displaying services -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="customer-care">
+        <h2>Customer Care</h2>
+        <!-- Customer support information and form goes here -->
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+            <!-- Carousel for displaying testimonials -->
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribe-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="social-media">
+        <h2>Follow Us on Social Media</h2>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Our Pricing</h2>
+        <!-- Pricing table goes here -->
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <!-- Dynamic FAQ content goes here -->
+        </div>
+    </section>
+
+    <section id="live-chat">
+        <h2>Live Chat Support</h2>
+        <!-- Live chat support widget goes here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 alpasee</p>
+    </footer>
+
+    <script>
+        function trackPackage() {
+            // Simulated tracking code functionality
+            const trackingCode = document.getElementById('tracking-code').value;
+            
+            // Simulated location data
+            const locations = [
+                { lat: 40.7128, lng: -74.0060 }, // Example location 1
+                { lat: 34.0522, lng: -118.2437 }, // Example location 2
+                // Add more location data as needed
+            ];
+
+            // Initialize Google Maps
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: locations[0] // Initial location
+            });
+
+            // Simulate tracking movement on the map
+            let i = 0;
+            setInterval(() => {
+                map.setCenter(locations[i]);
+                i = (i + 1) % locations.length;
+            }, 3000); // Update every 3 seconds
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
